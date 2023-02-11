@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 1rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  pointer-events: none;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  height: 32rem;
+  width: 19rem;
+  border-radius: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.4rem;
+  z-index: 1000;
+  box-shadow: 1rem 5rem 10rem 5rem hsl(215, 77%, 15%);
+}
+
+.img-container {
+  height: 16rem;
+  margin-bottom: 1.1rem;
+  position: relative;
+}
+
+.img-container > img {
+  border-radius: 0.6rem;
+}
+
+.img-container-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.598);
+  opacity: 0;
+  transition: opacity 0.5s;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.img-container:hover > .img-container-overlay {
+  opacity: 1;
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.06rem;
+  width: 9.3rem;
+}
+
+.description {
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 1.2rem;
+  font-weight: 400;
+}
+
+.coin-and-time-left {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+
+.coin {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.time-left {
+  color: hsl(215, 51%, 70%);
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+}
+
+.border {
+  border: 0.01rem solid hsl(215, 32%, 27%);
+}
+
+.creation-of-container {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  border-top: 0.01rem solid hsl(215, 32%, 27%);
+  padding-top: 0.8rem;
+  font-weight: 300;
+}
+
+.creator-img-container {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2rem;
+  border: 0.13rem hsl(215, 51%, 70%) solid;
+}
+
+.creator-text {
+  font-size: 0.9rem;
+}
+
+.creator-name {
+  color: hsl(215, 51%, 70%);
+}
+
+/* HOVER STATES */
+.title:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.creator-name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
